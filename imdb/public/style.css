@@ -1,0 +1,43 @@
+body {
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 3em;
+  margin: 0 0 0.1em 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 0.9em;
+  margin: 0 0 50px;
+  color: #999;
+  text-align: center;
+}
+
+a {
+  margin-top: 30px;
+  padding-left: 20px;
+  color: #3e95cd;
+}
+
+#movies {
+  max-width: 500px;
+  margin: 50px auto;
+  height: 200px;
+  width: 800px;
+  background-color: #fffddb; 
+  border: solid 2px rgba(143, 143, 143, 0.2);
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+}

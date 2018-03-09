@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explanations</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+
+.topnav {
+    background-color: #979A9A;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+
+.topnav a.active {
+    background-color: #34495E;
+    color: white;
+}
+
+
+h1 {font-size: 450%; line-height:170%;}
+</style>	
+	
+</head>
+
+<body bgcolor="#dbd6d6">
+
+<div class="topnav">
+  <a href="home.html" style="font-family:arial">Home</a>
+  <a href="statistics.html" style="font-family:arial">Statistics</a>
+  <a href="Conclusions.html" style="font-family:arial">Conclusions</a>
+  <a href="Resources.html" style="font-family:arial">Resources</a>
+  <a class="active" href="Explanations.html" style="font-family:arial">The Code</a>
+</div>
+
+
+
+
+	<div class="res">
+	 <h1 style="font-family:arial; color: #2eb8b8" >How our code works</h1>
+	</div>
+	
+	<p style = "text-align:left; font-family:arial ; font-size:150% ; color: #000000">
+	<br>
+	We would like to give a simple explanation about how our code works .
+	<br>
+	Our project consists of 2 parts : First we have the Java program which collects and stores 
+	all the data about the movies and second we have HTML & JavaScript  
+	code to support  the connection to the java project and the visibility of our project. 
+	<br><br>
+	Let's talk about the implementation of the code:
+	<br>
+	We used an API key given us by TMDB website which we used to collect all the data about the 
+	movies, we focused on the top rated movies on TMDB and went through all the pages in the database 
+	to get the information using Unirest requests. 
+	<br>
+	The data received in a form of Json objects and we processed it and created a Movie object and a 
+	Person object. To be able to keep track the amount of male and female in the film industry we mapped 
+	the movies according to their release date , and to each person we stored his gender. 
+    <br>
+	We used the Java Spring framework that allows us to use a controller. The controller waits for requests 
+	from the website user (he can choose a decade , a genre and a role which he wants to get the 
+	information about) and process the information to send back to the website. 
+    <br>
+    To process the data  implemented a function that receives the choice of the user and calculates the 
+	percentage of men and women for every year in the chosen decade. 
+    <br><br>
+    At the JavaScript part we used an http requests and sent it to the controller with the choices of the user.
+   <br>
+    Also, we used a Google Charts tool which provides a way to build the graph according to the information
+	given from the controller and visualize it on our website. 
+   <br><br>
+   In conclusion , during this project we discovered a lot of new features and learned how to use them.
+   We hope you will enjoy this project as much as we did!!
+	</p>
+	
+	
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistics
+	</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+.topnav {
+    background-color: #979A9A;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+
+.topnav a.active {
+    background-color: #34495E;
+    color: white;
+}	
+	
+	
+h1 {font-size: 450%; line-height:170%;}
+	</style>
+	
+</head>
+<body bgcolor="#dbd6d6">
+
+<div class="topnav">
+  <a href="home.html" style="font-family:arial">Home</a>
+  <a class="active" href="statistics.html" style="font-family:arial">Statistics</a>
+  <a href="Conclusions.html" style="font-family:arial">Conclusions</a>
+  <a href="Resources.html" style="font-family:arial">Resources</a>
+  <a href="Explanations.html" style="font-family:arial">The Code</a>
+</div>
+
+
+
+<div class="wrapper">
+    <h1 style="font-family:arial; color: #2eb8b8">Gender Statistics</h1>
+    <h2>The percentage of women and men in key roles</h2>
+    <div class="selection" id="numberOfMovies">
+        <select class="menu" onchange="setGenre(this)">
+            <option value="">select genre</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Action">Action</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Mystery">Mystery</option>
+        </select>
+        <divider>|</divider>
+        <select class="menu" onchange="setRole(this)">
+            <option value="">select role</option>
+            <option value="actor">actor</option>
+            <option value="staff">staff</option>
+        </select>
+        <divider>|</divider>
+        <select class="menu" onchange="setDecade(this)">
+            <option value="">select decade</option>
+			<option value="40">1940-1949</option>
+            <option value="50">1950-1959</option>
+            <option value="60">1960-1969</option>
+            <option value="70">1970-1979</option>
+            <option value="80">1980-1989</option>
+            <option value="90">1990-1999</option>
+            <option value="00">2000-2009</option>
+            <option value="10">2010-2019</option>
+        </select>
+        <divider>|</divider>
+        <button type="button" id="graphBtn" onclick="execute()">go!</button>
+    </div>
+    <br>
+    <br>
+    <canvas id="myChart" width="1600" height="900"></canvas>
+</div>
+<div id="movieListContainer">
+</div>
+<script src="jquery/jquery.min.js"></script>
+<script src="chartjs/Chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

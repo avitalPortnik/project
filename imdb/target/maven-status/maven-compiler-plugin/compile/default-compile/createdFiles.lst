@@ -1,0 +1,6 @@
+com\avitalnurit\imdb\CSVUtil.class
+com\avitalnurit\imdb\Person.class
+com\avitalnurit\imdb\App.class
+com\avitalnurit\imdb\Movie.class
+com\avitalnurit\imdb\MovieService.class
+com\avitalnurit\imdb\StatController.class
